@@ -1,0 +1,317 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background:#121212;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:10px;
+}
+.popup{
+    width:680px;
+    max-width:90vw;
+    max-height:90vh;
+
+    background:#fff;
+    border-radius:24px;
+
+    overflow-x:hidden;
+
+    box-shadow:0 30px 90px rgba(0,0,0,.25);
+}
+
+.hero-image{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+}
+
+.content{
+    padding:7px;
+}
+.content{
+    padding:15px 20px 25px;
+    text-align:center;
+}
+h1{
+    font-size:35px;
+    font-weight:700;
+    color:#1f2937;
+    margin-bottom:-5px;
+}
+h2{
+    font-size:27px;
+    color:#3d8b5b;
+    margin-bottom:-5px;
+}
+h2{
+    margin-top:6px;
+}
+h1{
+    margin-top:0;
+    margin-bottom:3px;
+}
+.start-btn{
+
+    margin-top:14px;
+
+    width:267px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#3d8b5b;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+    }
+    #quiz-screen{
+    padding:30px;
+}
+
+#quiz-screen h2{
+    font-size:18px;
+    color:#2E7D32;
+    margin-bottom:20px;
+}
+
+#quiz-screen p{
+    font-size:22px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:30px;
+}
+/* ===========================
+   QUIZ SCREEN
+=========================== */
+
+#quiz-screen{
+    padding:32px;
+}
+
+.progress{
+    width:100%;
+    height:8px;
+    background:#E8ECEF;
+    border-radius:50px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.progress-fill{
+    width:5%;
+    height:100%;
+    background:#2E7D32;
+}
+
+.question-counter{
+    display:block;
+    color:#2E7D32;
+    font-weight:600;
+    font-size:15px;
+    margin-bottom:12px;
+}
+
+.question-title{
+    font-size:28px;
+    line-height:1.3;
+    margin-bottom:28px;
+    color:#222;
+}
+
+.answers{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.answer-btn{
+
+    width:100%;
+
+    background:white;
+
+    border:2px solid #E5E5E5;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    font-size:18px;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.answer-btn:hover{
+
+    border-color:#2E7D32;
+
+    background:#F5FFF6;
+}
+
+.continue-btn{
+
+    width:100%;
+
+    margin-top:28px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.continue-btn:hover{
+
+    background:#256528;
+}
+#question-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:24px;
+}
+.answer-btn.selected{
+
+    background:#2E7D32;
+
+    color:white;
+
+    border-color:#2E7D32;
+
+}
+#lead-screen{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#lead-screen input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    box-sizing:border-box;
+}
+
+#lead-screen .continue-btn{
+    width:100%;
+}
+#lead-image{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:20px;
+}
+#success-screen{
+    text-align:center;
+    padding:30px;
+}
+
+.success-image{
+    width:100%;
+    max-width:500px;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+    display:block;
+    margin:0 auto 25px;
+}
+
+#success-screen h2{
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+#success-screen p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+#continue-btn{
+    width:100%;
+    margin-top:25px;
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    background:#2E7D32;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+#view-report-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, #2E7D32, #43A047);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#view-report-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(46,125,50,.35);
+}
+.popup {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+
+    cursor: pointer;
+    z-index: 999;
+
+    transition: all .2s ease;
+}
+
+.close-btn:hover {
+    color: #000;
+    transform: scale(1.15);
+}
