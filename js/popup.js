@@ -343,10 +343,3 @@ document.getElementById("view-report-btn").addEventListener("click", async funct
     }
 
 });
-document.getElementById("close-popup").addEventListener("click", function () {
-
-    alert("Popup closed.");
-
-    // In Shopify qui chiuderemo il popup.
-
-});
